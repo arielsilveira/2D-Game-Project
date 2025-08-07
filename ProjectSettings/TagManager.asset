@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Floor
+  - FxTemporaire
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - Ground
+  - Enemy
+  - Collectable
+  - Particle
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2539995275
+    locked: 0
+  - name: Player
+    uniqueID: 3595544511
+    locked: 0
+  - name: Enemy
+    uniqueID: 8946477
+    locked: 0
+  - name: Ground
+    uniqueID: 1221383499
+    locked: 0
+  - name: Chest
+    uniqueID: 1127285383
+    locked: 0
+  - name: Collectible
+    uniqueID: 866288181
+    locked: 0
+  m_RenderingLayers:
+  - Default
