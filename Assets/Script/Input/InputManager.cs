@@ -39,10 +39,10 @@ public class InputManager
         OnDash?.Invoke();
     }
 
-    public void DisablePlayerGameplayInput()
-    {
-      playerControls.Gameplay.Disable();
-    }
+    //public void DisablePlayerGameplayInput()
+    //{
+    //  playerControls.Gameplay.Disable();
+    //}
 
     public void EnablePlayerGameplayInput()
     {
@@ -55,5 +55,5 @@ public class InputManager
         if (SceneManager.GetActiveScene().name != "Gameplay") return;
         OnMenuOpenClose?.Invoke();
     }
-   public void DisableUIInput() => playerControls.UI.Disable();
+   //public void DisableUIInput() => playerControls.UI.Disable();
 }

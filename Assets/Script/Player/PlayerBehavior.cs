@@ -39,12 +39,16 @@ public class PlayerBehavior : MonoBehaviour
         //It keeps the character stand up
         rigidbody.freezeRotation = freezeRotation;
 
-        float moveDirection = inputManager.Movement;
         if(playerHealth.GetLives() <= 0) return;
+        //DashPlayer(moveDirection);
+
+    }
+
+    private void FixedUpdate()
+    {
+        float moveDirection = inputManager.Movement;
         MovePlayer(moveDirection);
         FlipPlayer(moveDirection);
-
-        //DashPlayer(moveDirection);
 
     }
 

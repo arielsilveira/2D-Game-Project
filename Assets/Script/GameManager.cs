@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
 
     [Header("Dynamic Game Object")]
     [SerializeField] private GameObject bossDoor;
+    [SerializeField] private PlayerBehavior player;
+    [SerializeField] private BossBehaviour boss;
+    [SerializeField] private BossFightTrigger bossFightTrigger;
 
     private void Awake()
     {
@@ -25,6 +28,8 @@ public class GameManager : MonoBehaviour
 
         UIManager.UpdateGemsLeftText(totalGems, gemsLeftToCollect);
         InputManager = new InputManager();
+
+        bossFightTrigger.OnPlayerEnterBossFight += ActivateBossBehaviour;
     }
 
     public void UpdateGemsLeft()
@@ -38,8 +43,18 @@ public class GameManager : MonoBehaviour
     {
         if(gemsLeftToCollect <= 0)
         {
-            print("Door destroyed");
+            //bossDoor.SetActive(false);
             Destroy(bossDoor);
         }
+    }
+
+    private void ActivateBossBehaviour()
+    {
+        boss.StartChasing();
+    }
+
+    public PlayerBehavior GetPlayer()
+    {
+        return player;
     }
 }

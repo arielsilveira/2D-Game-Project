@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Floor
   - FxTemporaire
+  - Particle
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Enemy
   - Collectable
   - Particle
-  - 
+  - Trap
   - 
   - 
   - 
@@ -60,6 +61,12 @@ TagManager:
     locked: 0
   - name: Collectible
     uniqueID: 866288181
+    locked: 0
+  - name: Particle
+    uniqueID: 1640431213
+    locked: 0
+  - name: Trap
+    uniqueID: 2889147121
     locked: 0
   m_RenderingLayers:
   - Default

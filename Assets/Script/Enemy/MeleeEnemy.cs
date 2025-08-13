@@ -38,7 +38,6 @@ public class MeleeEnemy : BaseEnemy
         cooldownTimer = 0;
         if(CheckPlayerInDetectArea().TryGetComponent(out PlayerHealth playerHealth))
         {
-            print("Player hit");
             Instantiate(projectilePrefab, launchPoint.position, Quaternion.identity);
         }
     }
@@ -48,11 +47,11 @@ public class MeleeEnemy : BaseEnemy
         return Physics2D.OverlapBox(detectPosition.position, detectBoxSize, 0f, playerLayer);
     }
 
-    private bool PlayerInSight()
-    {
-        Collider2D playerCollider = CheckPlayerInDetectArea();
-        return playerCollider != null;
-    }
+    //private bool PlayerInSight()
+    //{
+    //    Collider2D playerCollider = CheckPlayerInDetectArea();
+    //    return playerCollider != null;
+    //}
 
     private void OnDrawGizmos()
     {
